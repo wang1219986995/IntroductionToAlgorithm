@@ -154,6 +154,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Algorithms\Divide_and_Conquer_Algorithm\maximum_subarray.h" />
+    <ClInclude Include="src\Algorithms\Divide_and_Conquer_Algorithm\Strassen.h" />
     <ClInclude Include="src\Algorithms\sort_algorithms\insert_sort.h" />
     <ClInclude Include="src\Algorithms\sort_algorithms\merge_sort.h" />
     <ClInclude Include="src\Algorithms\sort_algorithms\selection_sort.h" />

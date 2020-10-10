@@ -16,8 +16,8 @@ namespace IntroductionToAlgorihtms {
 			auto left_current = begin;
 			auto right_current = mid;
 			while (left_current != mid && right_current != end) {
-				if (compare(*left_current, *right_current)    *current++ = *left_current++;//左侧较小
-				else                                          *current++ = *right_current++;//左侧较小
+				if (compare(*left_current, *right_current) { *current++ = *left_current++; }//左侧较小
+				else { *current++ = *right_current++; }//左侧较小
 			}
 			if (left_current == mid && right_current != end) { std::copy(right_current, end, current); }
 			if (right_current == end && left_current != mid) { std::copy(left_current, mid, current); }

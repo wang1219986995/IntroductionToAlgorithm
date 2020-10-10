@@ -5,52 +5,41 @@
 #include <vector>
 #include "src/Algorithms/sort_algorithms/insert_sort.h"
 #include "src/Algorithms/sort_algorithms/selection_sort.h"
-#include "src/Algorithms/sort_algorithms/merge_sort.h"
+//#include "src/Algorithms/sort_algorithms/merge_sort.h"
+#include "src/Algorithms/Divide_and_Conquer_Algorithm/maximum_subarray.h"
+#include "src/Algorithms/Divide_and_Conquer_Algorithm/Strassen.h"
+#include <ctime>
 using namespace std;
 
-static int count = 0;
-
-void merge(vector<int> nums, int left, int mid, int right) {
-	vector<int> temp(right - left + 1);
-	int current = 0;
-	int left_current = left, right_current = mid + 1;
-	while (left_current <= mid && right_current <= right) {
-		if (nums[left_current] <= nums[right_current])  temp[current++] = nums[left_current++];
-		else {
-			count += mid - left_current + 1;
-			temp[current++] = nums[right_current++];
-		}
-	}
-	if (left_current != mid && right_current == right) {
-		while (left_current != mid)  temp[current++] = nums[left_current++];
-	}
-	if (right_current != right && left_current == mid) {
-		while (right_current != right)  temp[current++] = nums[right_current++];
-	}
-	cout << left << "  " << right << "  " << count << endl;
-	cout << count;
-	copy(temp.begin(), temp.end(), nums.begin() + left);
-}
-
-void merge_sort(vector<int> nums, int left, int right) {
-	if (left < right) {
-		int mid = left + (right - left) / 2;
-		merge_sort(nums, left, mid);
-		merge_sort(nums, mid + 1, right);
-		merge(nums, left, mid, right);
-	}
-}
 
 
-int reversePairs(vector<int>& nums) {
-	merge_sort(nums, 0, nums.size() - 1);
-	return count;
-}
 
 int main()
 {
-	vector<int> a{ 2,4,5,8,1,80,45,73,17 };
-	reversePairs(a);
-	cout << count << endl;
+	vector< vector<int> > A = { {1,3},{7,5} };
+	vector< vector<int> > B = { {6,8},{4,2} };
+	Strassen m;
+	m.A = A;
+	m.B = B;
+	m.C = A;
+	//m.squary_matrix_multiply(A, B, m.C);
+	//for (int i = 0; i < m.C.size(); ++i) {
+	//	for (int j = 0; j < m.C[0].size(); ++j) {
+	//		cout << m.C[i][j] << "  ";
+	//	}
+	//	cout << endl;
+	//}
+	m.C = vector< vector<int> >(A.size(), vector<int>(A.size()));
+	m.squary_matrix_multiply_recursive(A, B, m.C);
+	for (int i = 0; i < m.C.size(); ++i) {
+		for (int j = 0; j < m.C[0].size(); ++j) {
+			cout << m.C[i][j] << "  ";
+		}
+		cout << endl;
+	}
+
+
+
+
 }
 

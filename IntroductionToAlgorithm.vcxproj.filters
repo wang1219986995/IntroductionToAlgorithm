@@ -25,6 +25,9 @@
     <Filter Include="头文件\src\Algorithms\sort_algotithms">
       <UniqueIdentifier>{200f5c9e-c2ec-4348-86fa-e6a1daddc6ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\src\Algorithms\Divide_and_Conquer_Algorithm">
+      <UniqueIdentifier>{8c0fdec1-86df-4337-a23e-55681f2a056b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -43,6 +46,12 @@
     </ClInclude>
     <ClInclude Include="src\TinySTL\vector.h">
       <Filter>头文件\src\TinySTL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithms\Divide_and_Conquer_Algorithm\maximum_subarray.h">
+      <Filter>头文件\src\Algorithms\Divide_and_Conquer_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithms\Divide_and_Conquer_Algorithm\Strassen.h">
+      <Filter>头文件\src\Algorithms\Divide_and_Conquer_Algorithm</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
