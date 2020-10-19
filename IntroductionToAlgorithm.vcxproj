@@ -156,9 +156,14 @@
   <ItemGroup>
     <ClInclude Include="src\Algorithms\Divide_and_Conquer_Algorithm\maximum_subarray.h" />
     <ClInclude Include="src\Algorithms\Divide_and_Conquer_Algorithm\Strassen.h" />
+    <ClInclude Include="src\Algorithms\sort_algorithms\counting_sort.h" />
+    <ClInclude Include="src\Algorithms\sort_algorithms\heap_sort.h" />
     <ClInclude Include="src\Algorithms\sort_algorithms\insert_sort.h" />
     <ClInclude Include="src\Algorithms\sort_algorithms\merge_sort.h" />
+    <ClInclude Include="src\Algorithms\sort_algorithms\quick_sort.h" />
     <ClInclude Include="src\Algorithms\sort_algorithms\selection_sort.h" />
+    <ClInclude Include="src\Algorithms\sort_algorithms\sequential_statistics.h" />
+    <ClInclude Include="src\TinySTL\heap_algo.h" />
     <ClInclude Include="src\TinySTL\vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

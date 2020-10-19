@@ -53,5 +53,20 @@
     <ClInclude Include="src\Algorithms\Divide_and_Conquer_Algorithm\Strassen.h">
       <Filter>头文件\src\Algorithms\Divide_and_Conquer_Algorithm</Filter>
     </ClInclude>
+    <ClInclude Include="src\TinySTL\heap_algo.h">
+      <Filter>头文件\src\TinySTL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithms\sort_algorithms\heap_sort.h">
+      <Filter>头文件\src\Algorithms\sort_algotithms</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithms\sort_algorithms\quick_sort.h">
+      <Filter>头文件\src\Algorithms\sort_algotithms</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithms\sort_algorithms\counting_sort.h">
+      <Filter>头文件\src\Algorithms\sort_algotithms</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithms\sort_algorithms\sequential_statistics.h">
+      <Filter>头文件\src\Algorithms\sort_algotithms</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
